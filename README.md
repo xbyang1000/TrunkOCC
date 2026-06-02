@@ -1,27 +1,19 @@
-# TrunkOCC
+# TrunkOCC:  Tree trunk detection by using deep one-class classification (OCC)
+
+Our trunk data was collected from Huanghai National Forest Park, located at Dongtai City, Jiangsu Province, China.
+
+## Main Features
+
+- PyTorch platform
+- Supporting `4x4` or `8x8`pixel-input for small object detection
+- Data labels stored in mat-format file
 
 
+## Model Training
 
-数据集来自于中国江苏省东台市黄海国家森林公园。
-
-该项目用于树干目标检测任务，采用单分类学习思路进行训练：使用目标类别样本进行建模.
-## Features
-
-- 基于 PyTorch 实现
-- 支持图像块级别训练与推理
-- 支持 `4x4` / `8x8` 小块输入实验
-- 支持 `.mat` 标签文件读取
-- 支持实时验证与结果统计
-- 支持 AUC、误警率、检测率评估
-
-
-
-## Training
-
-运行训练：
-
+by Running
 ```bash
-python main.py --batch_size 80 --epochs 100 --lr 0.03
+python main.py --batch_size xx --epochs xx --lr xx, # e.g., "python main.py --batch_size 80 --epochs 100 --lr 0.03"
 ```
 
 
